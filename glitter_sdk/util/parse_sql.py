@@ -109,7 +109,7 @@ def build_update_statement(database_name: str, table_name: str, columns: map = N
     return sql, cond_vals_args
 
 
-def build_delete_statement(self, database_name: str, table_name: str, where: map, order_by: str, asc: bool, limit: int):
+def build_delete_statement(database_name: str, table_name: str, where: map, order_by: str, asc: bool, limit: int):
     """Build a DELETE SQL statement.
 
     Args:
@@ -139,7 +139,7 @@ def build_delete_statement(self, database_name: str, table_name: str, where: map
     if limit > 0:
         sql += " LIMIT {}".format(limit)
 
-    return self.sql_exec(sql, where_val_args)
+    return sql, where_val_args
 
 
 def prepare_sql(sql_tpl: str, args: (list, tuple)):
