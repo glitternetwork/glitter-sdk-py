@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "glitter-sdk"
-version = "1.0.3"
+version = "1.0.6"
 description='Glitter Protocol is a blockchain based database and index engine for developing and hosting web3 applications in decentralized storage networks.'
 authors = ["Glitter Protocol <ted@glitterprotocol.io>"]
 readme = "README.md"
@@ -19,10 +19,12 @@ mnemonic = "^0.20"
 attrs = "^22.2.0"
 attr = "^0.3.2"
 betterproto = "2.0.0b4"
-coincurve = "^18.0.0"
 base58 = "^2.1.1"
 pycryptodomex = "^3.17"
-glitter-proto = "^0.4.0"
+glitter-proto = "^0.6.0"
+coincurve = "19.0.1"
+requests = "^2.31.0"
+setuptools = ">=67.7.0"
 
 
 [build-system]
